@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Setup · OcuClaw</title>
+<style>
+@font-face{
+  font-family:'Even Signature';
+  src:url('data:font/woff2;base64,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') format('woff2');
+}
+:root{
+  --bg:#0b0d0a; --bg-2:#0f1310; --bg-3:#141a14;
+  --ink:#f0f5ea; --ink-2:#cfe8d4; --muted:rgba(240,245,234,0.55);
+  --rule:rgba(240,245,234,0.10); --rule-2:rgba(240,245,234,0.18);
+  --lens:#4dd58a; --lens-dim:#2f8c58; --glow:rgba(77,213,138,0.4);
+  --on-lens:#06140c;
+  --warn:#ffb454; --info:#7ad3ff;
+  --serif:'Even Signature','Pixelify Sans','Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --glow-sm:0 0 5px var(--glow); --glow-md:0 0 12px var(--glow);
+  --glow-lg:0 0 40px rgba(77,213,138,0.14), inset 0 0 28px rgba(77,213,138,0.05);
+  --r-2:3px; --r-3:10px; --r-pill:999px;
+  --ease:cubic-bezier(.22,.8,.32,1);
+  --w:820px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:
+  radial-gradient(900px 520px at 70% -8%, rgba(77,213,138,0.06), transparent 58%),
+  var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.55;
+  letter-spacing:-0.005em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;color:inherit;background:none;border:none}
+p{text-wrap:pretty}
+.wrap{max-width:var(--w);margin-inline:auto;padding-inline:28px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--lens);display:inline-flex;align-items:center;gap:9px}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--lens);box-shadow:var(--glow-sm)}
+.micro{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--muted)}
+
+/* masthead — matched exactly to index.html */
+.mast{position:sticky;top:0;z-index:20;background:color-mix(in oklab,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.mast .wrap{max-width:1120px;padding-inline:24px}
+@media (max-width:720px){.mast{backdrop-filter:none;background:color-mix(in oklab,var(--bg) 96%,transparent)}}
+.mast__row{display:flex;justify-content:space-between;align-items:center;padding:11px 0}
+.mast__brand{font-family:var(--serif);font-size:22px;letter-spacing:-0.01em;color:var(--ink);display:inline-flex;align-items:center;gap:10px}
+.mast__mark{width:45px;height:45px;display:inline-block;image-rendering:pixelated;image-rendering:crisp-edges;border-radius:4px;flex:none}
+.mast__brand span{display:inline-flex;align-items:baseline;gap:10px}
+.mast__brand em{font-style:normal;color:var(--lens-dim);font-size:11px;font-family:var(--mono);letter-spacing:0.14em;text-transform:uppercase}
+.mast__nav{display:flex;gap:22px;font-family:var(--serif);font-size:13.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
+.mast__nav a{color:var(--muted);transition:color .16s ease}
+.mast__nav a:hover{color:var(--ink)}
+.mast__nav a.here{color:var(--lens)}
+@media (max-width:820px){
+  .mast .wrap{padding-inline:22px}
+  .mast__row{padding:9px 0;gap:10px}
+  .mast__mark{width:32px;height:32px}
+  .mast__brand{font-size:18px;gap:8px}
+  .mast__brand em{font-size:10px;letter-spacing:0.12em}
+  .mast__nav{display:none!important}
+}
+
+.btn{display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border-radius:var(--r-3);
+  border:1px solid var(--rule-2);font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;
+  text-transform:uppercase;transition:all .16s var(--ease)}
+.btn:hover{background:var(--bg-3)}
+.btn.solid{background:var(--lens);color:var(--on-lens);border-color:var(--lens);font-weight:600}
+.btn.solid:hover{box-shadow:var(--glow-md)}
+.btn.line{color:var(--lens);border-color:var(--lens)}
+.btn.line:hover{box-shadow:var(--glow-md);background:rgba(77,213,138,0.06)}
+.btn.ghost{border-color:transparent;color:var(--muted)}
+.btn.ghost:hover{color:var(--ink)}
+.btn.sm{padding:8px 14px;font-size:10.5px}
+
+.copyline{display:flex;align-items:stretch;border:1px solid var(--rule-2);border-radius:var(--r-3);background:var(--bg-3);overflow:hidden}
+.copyline code{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding:12px 13px;overflow-x:auto;white-space:nowrap;flex:1;display:flex;align-items:center}
+.copyline .cbtn{flex:none;border-left:1px solid var(--rule-2);padding:0 14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--lens);transition:all .16s}
+.copyline .cbtn:hover{background:rgba(77,213,138,0.08)}
+.copyline .cbtn.done{color:var(--on-lens);background:var(--lens)}
+
+/* hero */
+.hero{padding:clamp(38px,5.5vw,60px) 0 20px}
+.hero .eyebrow{margin-bottom:15px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5.2vw,62px);line-height:.98;letter-spacing:-0.02em;margin:0 0 13px;text-wrap:balance;max-width:16ch}
+.hero h1 .gl{color:var(--lens);text-shadow:0 0 26px var(--glow)}
+.hero .lead{font-size:clamp(16px,2vw,18px);color:var(--ink-2);max-width:56ch;margin:0;line-height:1.5}
+
+/* agent banner */
+.banner{margin:26px 0 30px;border:1px solid rgba(77,213,138,0.3);border-radius:14px;
+  background:linear-gradient(180deg,rgba(77,213,138,0.06),transparent 60%),var(--bg-2);box-shadow:var(--glow-lg);padding:20px}
+.banner .k{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--lens);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.banner .bact{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.banner .bnote{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-left:auto}
+@media(max-width:540px){.banner .bnote{margin-left:0}}
+/* path selector + Hermes coming-soon */
+.pathsel{display:inline-flex;gap:3px;padding:3px;margin-bottom:14px;border:1px solid var(--rule-2);border-radius:var(--r-3);background:var(--bg-3)}
+.pathseg{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:8px 15px;border-radius:7px;display:inline-flex;align-items:center;gap:8px;transition:all .16s var(--ease)}
+.pathseg:hover{color:var(--ink)}
+.pathseg.is-on{background:var(--lens);color:var(--on-lens);font-weight:600;box-shadow:var(--glow-sm)}
+.pathseg .soon{font-size:8.5px;letter-spacing:.14em;border:1px solid var(--rule-2);border-radius:var(--r-pill);padding:2px 6px;color:var(--muted)}
+.pathseg.is-on .soon{border-color:rgba(6,20,12,.35);color:var(--on-lens)}
+.banner__body{transition:opacity .25s var(--ease),filter .25s var(--ease)}
+.banner.is-soon{border-color:var(--rule-2);box-shadow:none;background:var(--bg-2)}
+.banner.is-soon .k{color:var(--muted)}
+.banner.is-soon .banner__body{opacity:.4;filter:grayscale(.75);pointer-events:none;user-select:none}
+.soonnote{display:none;margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--warn);align-items:center;gap:9px}
+.soonnote::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--warn);box-shadow:0 0 8px rgba(255,180,84,.5);flex:none}
+.banner.is-soon .soonnote{display:flex}
+/* coming-soon also dims the steps below */
+#wizSec .ovr,#wizSec .spine,#wizSec .donecard{transition:opacity .25s var(--ease),filter .25s var(--ease)}
+#wizSec.is-soon .ovr,#wizSec.is-soon .spine,#wizSec.is-soon .donecard{opacity:.4;filter:grayscale(.75);pointer-events:none;user-select:none}
+
+/* overall progress line */
+.ovr{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.ovr .bar{flex:1;height:6px;border-radius:999px;background:var(--bg-3);border:1px solid var(--rule);overflow:hidden}
+.ovr .bar i{display:block;height:100%;width:100%;transform:scaleX(0);transform-origin:left center;background:linear-gradient(90deg,var(--lens-dim),var(--lens));box-shadow:var(--glow-sm);will-change:transform;transition:transform .55s cubic-bezier(.33,0,.2,1)}
+.ovr .lbl{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.ovr .lbl b{color:var(--lens)}
+
+/* spine */
+.spine{position:relative}
+/* rail + fill are sized by JS to span exactly dot-1 centre → dot-4 centre */
+.spine__rail{position:absolute;left:21px;width:2px;top:0;height:0;background:var(--rule);border-radius:2px}
+.spine__fill{position:absolute;left:21px;width:2px;top:0;height:0;border-radius:2px;
+  background:linear-gradient(180deg,var(--lens),var(--lens-dim));box-shadow:0 0 8px var(--glow);
+  transform:scaleY(0);transform-origin:top center;will-change:transform;
+  transition:transform .55s cubic-bezier(.33,0,.2,1)}
+@media (prefers-reduced-motion:reduce){
+  .spine__fill,.ovr .bar i{transition:none}
+  .node__body{transition:none}
+}
+.node{position:relative;padding:0 0 14px 58px}
+.node__dot{position:absolute;left:10px;top:6px;width:24px;height:24px;border-radius:50%;border:1px solid var(--rule-2);
+  background:var(--bg);display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:var(--muted);z-index:2;transition:all .3s}
+.node.active .node__dot{border-color:var(--lens);color:var(--lens);box-shadow:var(--glow-md)}
+.node.complete .node__dot{background:var(--lens);border-color:var(--lens);color:var(--on-lens);box-shadow:var(--glow-sm)}
+.node__card{border:1px solid var(--rule-2);border-radius:14px;background:var(--bg-2);overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.node.active .node__card{border-color:rgba(77,213,138,0.32);box-shadow:var(--glow-md)}
+.node.complete:not(.active) .node__card{opacity:.82}
+.node__head{display:flex;align-items:center;gap:12px;padding:16px 18px;cursor:pointer;transition:background .15s}
+.node__head:hover{background:rgba(240,245,234,0.02)}
+.node__head .pk{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--lens-dim)}
+.node__head h3{font-family:var(--serif);font-weight:400;font-size:21px;letter-spacing:-0.01em;margin:1px 0 0}
+.node__head .meta{margin-left:auto;display:flex;align-items:center;gap:12px}
+.node__head .pc{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.node.complete .node__head .pc{color:var(--lens)}
+.node__head .chev{color:var(--muted);font-size:12px;transition:transform .3s}
+.node.active .node__head .chev{transform:rotate(180deg);color:var(--lens)}
+.node__body{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+.node.active .node__body{max-height:460px}
+.node__inner{padding:2px 18px 18px}
+.node__inner>p{margin:0 0 12px;font-size:13.5px;color:var(--muted);line-height:1.5;max-width:54ch}
+.item{display:flex;align-items:flex-start;gap:13px;padding:11px 0;border-top:1px solid var(--rule);cursor:pointer}
+.item:first-of-type{border-top:0}
+.box{width:20px;height:20px;border-radius:6px;border:1px solid var(--rule-2);flex:none;display:grid;place-items:center;color:transparent;font-size:12px;margin-top:1px;transition:all .2s}
+.item.on .box{background:var(--lens);border-color:var(--lens);color:var(--on-lens);box-shadow:var(--glow-sm)}
+.item .txt{flex:1}
+.item .txt .t{font-size:14px;color:var(--ink-2);transition:color .2s}
+.item.on .txt .t{color:var(--muted)}
+.item .txt .d{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:2px}
+.item .txt .d b{color:var(--ink-2);font-weight:400}
+.item .nn{font-family:var(--mono);font-size:11px;color:var(--lens-dim);min-width:20px;text-align:right;margin-top:2px}
+
+
+.donecard{margin:24px 0 0 58px;text-align:center;border:1px solid rgba(77,213,138,0.4);border-radius:14px;
+  background:linear-gradient(180deg,rgba(77,213,138,0.08),transparent 70%),var(--bg-2);box-shadow:var(--glow-lg);
+  padding:0 28px;opacity:0;max-height:0;overflow:hidden;transition:all .4s}
+.donecard.show{opacity:1;max-height:220px;padding:26px}
+.donecard h3{font-family:var(--serif);font-weight:400;font-size:25px;margin:0 0 6px}
+.donecard p{margin:0;color:var(--muted)}
+
+/* footer — matched to index.html */
+.foot{padding:20px 0 26px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
+.foot__row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a:hover{color:var(--lens)}
+/* ── fastpath variation · steps ── */
+.banner--steps .fp-step{display:flex;align-items:center;gap:11px;margin:14px 0 10px}
+.banner--steps .fp-n{width:22px;height:22px;border-radius:50%;border:1px solid var(--lens);color:var(--lens);display:grid;place-items:center;font-family:var(--mono);font-size:11px;flex:none;box-shadow:var(--glow-sm)}
+.banner--steps .fp-l{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.banner--steps .pathsel{margin-bottom:2px}
+.banner--steps.is-soon .fp-n{border-color:var(--rule-2);color:var(--muted);box-shadow:none}
+</style>
+</head>
+<body>
+
+<header class="mast" data-od-id="nav">
+  <div class="wrap mast__row">
+    <a class="mast__brand" href="index.html#top"><img class="mast__mark" src="assets/ocuclaw-logo.png" alt="" width="45" height="45"/><span>OcuClaw <em>v0.1</em></span></a>
+    <nav class="mast__nav">
+      <a href="index.html#what">What</a>
+      <a href="index.html#vows">Vows</a>
+      <a href="setup.html" class="here">Setup</a>
+      <a href="support.html">Support</a>
+      <a href="index.html#get">Get it</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Setup · wizard</p>
+      <h1>Walk the spine, <span class="gl">node by node.</span></h1>
+      <p class="lead">Each phase opens as you reach it; tick its steps and it folds away green while the next lights up. Or hand the guide to your OpenClaw agent and watch it walk the spine for you.</p>
+    </div>
+  </section>
+
+  <section class="wrap" id="wizSec" data-od-id="wizard">
+    <div class="banner banner--steps" id="fastpath" data-od-id="banner">
+      <div class="k"><span style="color:var(--lens)">◉</span> Fastest path · paste to your agent</div>
+      <div class="fp-step"><span class="fp-n">1</span><span class="fp-l">Pick your agent</span></div>
+      <div class="pathsel" role="tablist" aria-label="Choose your agent">
+        <button class="pathseg is-on" type="button" data-path="openclaw" role="tab" aria-selected="true">OpenClaw</button>
+        <button class="pathseg" type="button" data-path="hermes" role="tab" aria-selected="false">Hermes Agent <span class="soon">soon</span></button>
+      </div>
+      <div class="banner__body" id="fpbody">
+        <div class="fp-step"><span class="fp-n">2</span><span class="fp-l">Paste this to your agent</span></div>
+        <div class="copyline">
+          <code id="cmd">Read https://ocuclaw.com/openclaw/START_HERE.md and set up OcuClaw for me.</code>
+          <button class="cbtn" data-copy="#cmd">Copy</button>
+        </div>
+        <div class="bact">
+          <button class="btn solid" id="runAgent">▸ Let the agent walk it</button>
+          <button class="btn ghost" id="reset">Reset</button>
+          <span class="bnote">~20–30 min · asks before each · secrets stay yours</span>
+        </div>
+      </div>
+      <div class="soonnote" id="soonnote">Hermes Agent integration is <b style="color:var(--ink-2);font-weight:400">coming soon</b> — pick OpenClaw to set up today.</div>
+    </div>
+
+    <div class="ovr">
+      <div class="bar"><i id="ovrfill"></i></div>
+      <span class="lbl"><b id="ovrn">0</b>/10 steps</span>
+    </div>
+
+    <div class="spine" id="spine" data-od-id="spine">
+      <div class="spine__rail" id="rail"></div>
+      <div class="spine__fill" id="fill"></div>
+
+      <div class="node active" data-phase="1" data-od-id="phase-1">
+        <div class="node__dot">1</div>
+        <div class="node__card">
+          <div class="node__head"><div><div class="pk">Phase 1 · Prepare</div><h3>Establish your lane</h3></div><div class="meta"><span class="pc"><span class="pc-n">0</span>/1</span><span class="chev">▾</span></div></div>
+          <div class="node__body"><div class="node__inner">
+            <p>Confirm the ground before installing anything — OS, container, shell access, elevation.</p>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Prerequisites confirmed</span><span class="d">OpenClaw ≥ 2026.4.25 · G2 paired · <b>openclaw --version</b></span></span><span class="nn">01</span></label>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="node" data-phase="2" data-od-id="phase-2">
+        <div class="node__dot">2</div>
+        <div class="node__card">
+          <div class="node__head"><div><div class="pk">Phase 2 · Install</div><h3>Plugin, token &amp; gateway</h3></div><div class="meta"><span class="pc"><span class="pc-n">0</span>/4</span><span class="chev">▾</span></div></div>
+          <div class="node__body"><div class="node__inner">
+            <p>Add the plugin, set the relay secret yourself, grant tool access, and reload the gateway.</p>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Install the plugin</span><span class="d"><b>openclaw plugins install ocuclaw</b></span></span><span class="nn">02</span></label>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Set the relay token</span><span class="d">You paste the secret — the agent never sees it</span></span><span class="nn">03</span></label>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Enable + grant tool access</span><span class="d">Allow the <b>ocuclaw</b> tool</span></span><span class="nn">04</span></label>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Restart the gateway</span><span class="d"><b>openclaw gateway restart</b> → plugin loads</span></span><span class="nn">05</span></label>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="node" data-phase="3" data-od-id="phase-3">
+        <div class="node__dot">3</div>
+        <div class="node__card">
+          <div class="node__head"><div><div class="pk">Phase 3 · Connect</div><h3>Join the halves over Tailscale</h3></div><div class="meta"><span class="pc"><span class="pc-n">0</span>/4</span><span class="chev">▾</span></div></div>
+          <div class="node__body"><div class="node__inner">
+            <p>Bring Tailscale up, serve the relay privately, and get your phone onto the same tailnet.</p>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Tailscale up</span><span class="d">Bring Tailscale up on this machine</span></span><span class="nn">06</span></label>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Serve routes</span><span class="d">Serve → <b>localhost:&lt;wsPort&gt;</b> · never funnel</span></span><span class="nn">07</span></label>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Phone on the tailnet</span><span class="d">Join the same tailnet from your phone</span></span><span class="nn">08</span></label>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">Connect the OcuClaw app</span><span class="d"><b>wss://&lt;node&gt;.&lt;tailnet&gt;.ts.net:8444</b></span></span><span class="nn">09</span></label>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="node" data-phase="4" data-od-id="phase-4">
+        <div class="node__dot">4</div>
+        <div class="node__card">
+          <div class="node__head"><div><div class="pk">Phase 4 · Verify</div><h3>See it on the glasses</h3></div><div class="meta"><span class="pc"><span class="pc-n">0</span>/1</span><span class="chev">▾</span></div></div>
+          <div class="node__body"><div class="node__inner">
+            <p>One end-to-end check closes the loop. When a reply lands on the G2, you're done.</p>
+            <label class="item"><span class="box">✓</span><span class="txt"><span class="t">End-to-end check</span><span class="d">A reply appears on the glasses — you're done</span></span><span class="nn">10</span></label>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="donecard" id="donecard" data-od-id="done">
+      <h3>Spine complete — all ten.</h3>
+      <p>Glasses are live. Load <b style="color:var(--ink-2);font-weight:400">wrap-feedback.md</b> to close out.</p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="foot" data-od-id="footer">
+  <div class="wrap foot__row">
+    <span>OcuClaw · v0.1</span>
+    <span>not affiliated with Even Realities</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY='ocuclaw-setup-w3';
+  var nodes=Array.prototype.slice.call(document.querySelectorAll('.node'));
+  var allItems=Array.prototype.slice.call(document.querySelectorAll('.item'));
+  var total=allItems.length;
+  var ovrfill=document.getElementById('ovrfill'), ovrn=document.getElementById('ovrn');
+  var rail=document.getElementById('rail'), fill=document.getElementById('fill');
+  var spineEl=document.getElementById('spine');
+  var donecard=document.getElementById('donecard');
+
+  // measure the rail + fill to span exactly between the first and last dot centres,
+  // so it stays aligned through accordion expand/collapse, resize, and font load
+  function geom(){
+    var sb=spineEl.getBoundingClientRect();
+    var ds=nodes.map(function(n){return n.querySelector('.node__dot').getBoundingClientRect()});
+    var firstY=ds[0].top+ds[0].height/2-sb.top;
+    var lastY=ds[ds.length-1].top+ds[ds.length-1].height/2-sb.top;
+    var h=Math.max(0,lastY-firstY);
+    rail.style.top=firstY+'px';rail.style.height=h+'px';
+    fill.style.top=firstY+'px';fill.style.height=h+'px';
+  }
+  // fill is a full-span layer scaled on the compositor (transform, not height) — 60fps, no layout
+  function applyFill(frac){fill.style.transform='scaleY('+frac+')'}
+
+  function save(){var on=[];allItems.forEach(function(it,i){if(it.classList.contains('on'))on.push(i)});try{localStorage.setItem(KEY,JSON.stringify(on))}catch(e){}}
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||[]}catch(e){return []}}
+
+  function open(idx){nodes.forEach(function(n,k){n.classList.toggle('active',k===idx)})}
+
+  function refresh(){
+    var done=0;
+    allItems.forEach(function(it){if(it.classList.contains('on'))done++});
+    nodes.forEach(function(n){
+      var its=n.querySelectorAll('.item'),c=0;its.forEach(function(x){if(x.classList.contains('on'))c++});
+      n.querySelector('.pc-n').textContent=c;
+      n.classList.toggle('complete',c===its.length);
+    });
+    var frac=total?done/total:0;
+    ovrfill.style.transform='scaleX('+frac+')';
+    ovrn.textContent=done;
+    applyFill(frac); // smooth per-step fill (10 increments), lands exactly full at 100%
+    donecard.classList.toggle('show',done===total);
+  }
+
+  load().forEach(function(i){if(allItems[i])allItems[i].classList.add('on')});
+  geom();refresh();
+  // recompute the rail span whenever the spine reflows (accordion open/close, resize, font swap)
+  if(window.ResizeObserver){new ResizeObserver(function(){geom()}).observe(spineEl)}
+  else{window.addEventListener('resize',geom)}
+  window.addEventListener('load',function(){geom();refresh()});
+
+  // tick item
+  allItems.forEach(function(it){
+    it.addEventListener('click',function(e){
+      e.preventDefault();e.stopPropagation();
+      it.classList.toggle('on');refresh();save();
+      var n=it.closest('.node');var its=n.querySelectorAll('.item'),c=0;its.forEach(function(x){if(x.classList.contains('on'))c++});
+      if(c===its.length){var idx=nodes.indexOf(n);if(idx<nodes.length-1)setTimeout(function(){open(idx+1)},340)}
+    });
+  });
+  // header toggles open
+  nodes.forEach(function(n,i){
+    n.querySelector('.node__head').addEventListener('click',function(){
+      if(n.classList.contains('active'))n.classList.remove('active');else open(i);
+    });
+  });
+
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=document.querySelector(b.dataset.copy);
+      navigator.clipboard.writeText(t.textContent.trim()).then(function(){
+        var old=b.textContent;b.textContent='Copied';b.classList.add('done');
+        setTimeout(function(){b.textContent=old;b.classList.remove('done')},1500);
+      });
+    });
+  });
+
+  // path selector — OpenClaw (live) vs Hermes Agent (coming soon)
+  var fastpath=document.getElementById('fastpath');
+  var cmdEl=document.getElementById('cmd');
+  var CMD_TEXT={
+    openclaw:'Read https://ocuclaw.com/openclaw/START_HERE.md and set up OcuClaw for me.',
+    hermes:'Read https://ocuclaw.com/hermes/start and set up OcuClaw for me.'
+  };
+  document.querySelectorAll('.pathseg').forEach(function(seg){
+    seg.addEventListener('click',function(){
+      var p=seg.dataset.path;
+      document.querySelectorAll('.pathseg').forEach(function(s){
+        var on=s===seg;s.classList.toggle('is-on',on);s.setAttribute('aria-selected',on?'true':'false');
+      });
+      cmdEl.textContent=CMD_TEXT[p];
+      fastpath.classList.toggle('is-soon',p==='hermes');
+      document.getElementById('wizSec').classList.toggle('is-soon',p==='hermes');
+    });
+  });
+
+  var running=false;
+  document.getElementById('runAgent').addEventListener('click',function(){
+    if(running)return;running=true;
+    allItems.forEach(function(it){it.classList.remove('on')});refresh();open(0);
+    var i=0;(function step(){
+      if(i>=allItems.length){running=false;save();return}
+      allItems[i].classList.add('on');open(nodes.indexOf(allItems[i].closest('.node')));refresh();
+      i++;setTimeout(step,500);
+    })();
+  });
+  document.getElementById('reset').addEventListener('click',function(){
+    if(running)return;allItems.forEach(function(it){it.classList.remove('on')});open(0);refresh();save();
+  });
+})();
+</script>
+</body>
+</html>
