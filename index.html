@@ -227,7 +227,8 @@ a{color:inherit;text-decoration:none}
   .def__h{font-size:clamp(26px,6.6vw,38px)}
 }
 /* ---------- V11 Manifesto + Capability grid ---------- */
-.mani__h{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,56px);line-height:1.12;letter-spacing:-0.02em;margin:0 0 40px;max-width:20ch;text-wrap:balance;color:var(--ink-2)}
+.mani__h{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,56px);line-height:1.12;letter-spacing:-0.02em;margin:0 0 40px;max-width:24ch;text-wrap:balance;color:var(--ink-2)}
+.mani__h--solo{margin-bottom:0}
 .mani__h em{font-style:italic;color:var(--ink);background:linear-gradient(transparent 62%,rgba(77,213,138,0.22) 62%);padding:0 0.04em;margin-right:0.06em}
 .mani__row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule-2)}
 .mani__cell{display:flex;flex-direction:column;gap:8px;padding:22px 22px 0 0;border-right:1px solid var(--rule)}
@@ -1306,19 +1307,14 @@ a{color:inherit;text-decoration:none}
 
 <section id="what" class="sec">
   <div class="wrap">
-    <div class="sec__eyebrow"><span>02</span> &nbsp; What it is</div>
-    <h2 class="mani__h reveal">A <em>full AI chat</em> that lives on your glasses, runs on <em>your own server</em>, and answers to <em>nobody but you.</em></h2>
-    <div class="mani__row">
-      <div class="mani__cell reveal" style="--rd:80ms"><span class="mani__k">Any model</span><span class="mani__v">ChatGPT, Claude, Gemini, or local</span></div>
-      <div class="mani__cell reveal" style="--rd:140ms"><span class="mani__k">Two agents</span><span class="mani__v">OcuClaw and Even AI, side by side</span></div>
-      <div class="mani__cell reveal" style="--rd:200ms"><span class="mani__k">One owner</span><span class="mani__v">You, all the way down</span></div>
-    </div>
+    <div class="sec__eyebrow">What it is</div>
+    <h2 class="mani__h mani__h--solo reveal">A <em>full AI chat</em> that lives on your glasses, runs on <em>your own server</em>, and answers to <em>nobody but you.</em></h2>
   </div>
 </section>
 
 <section id="does" class="sec">
   <div class="wrap">
-    <div class="sec__eyebrow"><span>03</span> &nbsp; What it does</div>
+    <div class="sec__eyebrow">What it does</div>
     <h2 class="does__h reveal">One pair of glasses, <em>the whole toolkit.</em></h2>
     <div class="does__grid">
       <div class="does__cell reveal" style="--rd:60ms">
@@ -3098,7 +3094,7 @@ a{color:inherit;text-decoration:none}
 /* Skip layout/paint of below-the-fold sections until they approach the
    viewport. contain-intrinsic-size:auto lets the browser remember each
    section's real height after first render, so there is no scroll jump. */
-#what, #vows, #get{ content-visibility: auto; contain-intrinsic-size: auto 720px; }
+#what, #does, #get{ content-visibility: auto; contain-intrinsic-size: auto 720px; }
 </style>
 <style id="scroll-reveal">
 /* Below-the-fold sections rise + fade as they enter view.
@@ -3118,6 +3114,17 @@ a{color:inherit;text-decoration:none}
 }
 /* Button press — tactile micro-interaction, transform only */
 .btn:active{ transform:translateY(0) scale(.97); }
+/* Keyboard focus — branded lens ring (was relying on the UA default, which
+   is low-contrast on the dark canvas). :focus-visible keeps mouse clicks clean. */
+.btn:focus-visible,
+.mast__brand:focus-visible,
+.mast__nav a:focus-visible,
+.end__meta a:focus-visible,
+.tweaks input:focus-visible,
+.tweaks select:focus-visible{
+  outline:2px solid var(--lens);
+  outline-offset:3px;
+}
 </style>
 <style id="hero-layout-override">
 /* ====================================================================
