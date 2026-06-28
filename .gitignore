@@ -42,3 +42,7 @@ Thumbs.db
 /tools/
 *.otf
 *.ttf
+
+# Open Design app metadata (local-only — regenerated, never commit)
+/.od-skills/
+*.artifact.json
