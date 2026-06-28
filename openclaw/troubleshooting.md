@@ -152,7 +152,7 @@ Already tried:
 
 ---
 
-**BETA-REPORT** — when a beta build misbehaves, assemble this paste-ready report, show it to the user, confirm together it contains no secrets, and have them post it in the beta-testing Discord (`https://ocuclaw.com`):
+**BETA-REPORT** — when a beta build misbehaves, assemble this paste-ready report, show it to the user, confirm together it contains no secrets, and have them post it in the beta-testing Discord (`https://discord.ocuclaw.com/`):
 ```
 OcuClaw beta report — guide 2026-06-21
 Installed beta version (from plugins inspect):

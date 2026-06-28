@@ -22,4 +22,4 @@ table resolve in fresh-install.md
 | Agent tool access | `tools.alsoAllow` must include `"ocuclaw"` when `tools.profile` is set (Step 4 / AGENT-TOOLS-FILTERED) |
 | Check versions | `npm view ocuclaw version` (latest) · `dist-tags` (channels) · `versions` (history) |
 | Update / switch channel | `openclaw plugins update ocuclaw` (stable) · `update ocuclaw@beta` (move to beta) · `install ocuclaw@latest --force` (roll back to stable) |
-| Community / support | Discord `https://ocuclaw.com` · `https://buymeacoffee.com/ocuclaw` |
+| Community / support | Discord `https://discord.ocuclaw.com/` · `https://buymeacoffee.com/ocuclaw` |

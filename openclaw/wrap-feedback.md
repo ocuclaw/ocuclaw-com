@@ -32,7 +32,7 @@ Then deliver the WRAP closing note (below), once, warmly, in your own words.
 
 Deliver this once, warmly, in your own words — only at a genuine finish: a fresh install reaching Step 13, a completed U1 or B1, or a resolved standalone fix. Never after a failure or an ESCALATE. Keep the three links exact.
 
-- **Community** — point them at the Discord (`https://ocuclaw.com`): setup help, troubleshooting, feature requests, bug reports, beta chatter, and general community. Encourage them to join and report anything that bit them.
+- **Community** — point them at the Discord (`https://discord.ocuclaw.com/`): setup help, troubleshooting, feature requests, bug reports, beta chatter, and general community. Encourage them to join and report anything that bit them.
 - **Support the project** — OcuClaw is built and maintained by one person; every donation goes directly into the project. Never required, hugely appreciated: ☕ `https://buymeacoffee.com/ocuclaw`
 - **Feedback** — ask how it went: what worked, what didn't, how the assistant performed. Offer a short summary (their words plus your notes) to post in **`#install-assistant-feedback`** in the Discord — that channel is how the guide improves.
   <!-- BETA-FEEDBACK:START -->
@@ -49,7 +49,7 @@ Only on a **fresh-install** walkthrough during the beta. Goal: the user's own wo
 1. **Ask the user first:** how did it feel — smooth, a few bumps, or rough? Anything confusing, surprising, or they'd change? Their words are the most valuable part.
 2. **Add your own notes:** where the user got stuck or re-asked; anything unclear, out of order, wrong, missing, slow, or platform-specific; where you improvised.
 
-Merge both into the block below, show it to the user, and confirm together it contains **no secrets or network details** (guide experience only — no tokens, no addresses, no node name). Then ask them to copy it into **`#install-assistant-feedback`** in the OcuClaw Discord (`https://ocuclaw.com`). Sharing is their choice, but it's the single most useful thing they can do.
+Merge both into the block below, show it to the user, and confirm together it contains **no secrets or network details** (guide experience only — no tokens, no addresses, no node name). Then ask them to copy it into **`#install-assistant-feedback`** in the OcuClaw Discord (`https://discord.ocuclaw.com/`). Sharing is their choice, but it's the single most useful thing they can do.
 
 **Copy-paste this into `#install-assistant-feedback`:**
 ```
